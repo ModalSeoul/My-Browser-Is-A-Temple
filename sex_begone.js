@@ -6,9 +6,7 @@ const sexWords = [
 ];
 
 sexWords.forEach((sex) => {
-    if (body_text.indexOf(sex) > -1) {
-        isSex = true;
-    }
+    isSex = body_text.indexOf(sex) ? true : false;
 });
 
 if (isSex) {
